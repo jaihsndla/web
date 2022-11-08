@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>复制成功</title>
+	</head>
+	<script type="text/javascript">
+		function hu() {
+			var as = a1.q1.value
+			var f = parseFloat(as)
+			if(f == as) {
+				a1.q2.value = (f + 1)
+			} else {
+				a1.q2.value = as
+			}
+			document.getElementById("q3").innerHTML = "复制成功";
+		}
+	</script>
+
+	<body>
+
+		<form id="a1">
+			<input type="text" name="q1" id="q1" /><br/>
+			<input type="text" name="q2" id="q2" />
+			<input type="button" onclick="hu()" value="点击" />
+		</form>
+		<span id="q3" style="color: cornflowerblue;"></span>
+	</body>
+</html>
