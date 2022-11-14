@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="car">
+<head>
+    <meta charset="UTF-8">
+    <title>跑动的汽车</title>
+</head>
+    <style>
+        .A {
+            width: 950px;
+            height: 560px;
+            border-radius: 100px;
+            border: 5px #55ff7f solid;
+        }
+        .B {
+            position: relative;
+            margin: auto;
+            top: 40px;
+            width: 800px;
+            height: 460px;
+            border-radius: 100px;
+            border: 5px #aa55ff dashed;
+        }
+        .C {
+            position: relative;
+            top: 35px;
+            margin: auto;
+            width: 650px;
+            height: 360px;
+            border-radius: 50px;
+            border: 5px #ffaa7f solid;
+        }
+
+        img {
+            margin-left: 5px;
+            width: 80px;
+            height: 60px;
+        }
+        img:hover{
+            animation-play-state: paused;
+        }
+
+        .car {
+            margin-top: 15px;
+            float: left;
+            position: relative;
+            animation: car 5s;
+            z-index: 1;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes car {
+            0% {
+                top: 0px;
+                left: 10px;
+            }
+
+            25% {
+                top: 0px;
+                left: 820px;
+            }
+
+            50% {
+                top: 450px;
+                left: 820px;
+            }
+
+            75% {
+                top: 450px;
+                left: 10px;
+            }
+
+            100% {
+                top: 0px;
+                left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<img src="image.png" class="car">
+<div class="A">
+    <div class="B">
+        <div class="C">
+        </div>
+    </div>
+</div>
+</body>
+</html>
