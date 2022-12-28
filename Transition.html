@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>Transition练习</title>
+<style> 
+#soo{
+	width:80px;
+	height:80px;
+	background:#0055ff;
+	transition:width 2s;
+	-webkit-transition:width 2s; /* Safari */
+	
+}
+
+#sco{
+	width:80px;
+	height:80px;
+	background:#55ffff;
+	transition:width 2s;
+	-webkit-transition:width 2s;
+}
+.all{
+	width: 100%;
+	height: 100%;
+	display: table;	
+}
+.one{
+	display: none;
+	line-height:80px;
+	margin-left: 5px;
+	position:absolute ;
+	color: white;
+	
+}
+.two{
+	
+	display: table-cell;
+	vertical-align:middle;
+	text-align:center	
+}
+	
+img{
+	width: 20px;
+	height: 20px;
+}
+div:hover
+{
+	width:200px;
+	
+}
+#sco :hover{
+	background-color: #00ff7f;
+	
+}
+#soo :hover{
+	background-color: #5555ff;
+	
+}
+div:hover .one{
+	display:inline-block;
+}
+div:hover .two{
+	float: right;
+	margin-right: 5px;
+	line-height: 80px;	
+}
+</style>
+</head>
+<body>
+
+<div id="soo">	
+	<div class="all">
+		<span class="one"></span>
+	</div>	
+</div>
+
+<div id="sco">	
+	<div class="all">
+		<span class="one"></span>
+	</div>	
+</div>
+
+
+</body>
+</html>
